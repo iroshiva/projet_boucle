@@ -96,7 +96,6 @@ class Game
 		puts "Tour numéro #{@comp_tour}"
 		puts "---------------" 
 		puts "Tu restes perché sur ta marche!"
-		# puts "Vous êtes maintenant à la marche #{@pos_mar}"
 	end
 
 
@@ -120,9 +119,6 @@ class Game
 			verif_de
 			verif_gagne
 		end
-
-
-		# additionne les autres method
 	end
 
 
@@ -132,7 +128,3 @@ end
 jeu = Game.new
 jeu.perform
 
-# var = Game.new
-# var.lance_de
-# # var.comp_ma
-# var.mont
