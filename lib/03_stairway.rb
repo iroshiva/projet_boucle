@@ -51,9 +51,11 @@ class Game
 
 
 
-# def desc
-# 	# - si 1 : -1 (descendre) et dire sur quelle marche est le joueur
-# end
+	def desc
+	# - si 1 : -1 (descendre) et dire sur quelle marche est le joueur
+		@pos_mar -= 1
+		puts "Vous êtes descendu d'un marche!"
+	end
 
 # def rest
 # 	# - si 2, 3 ou 4 : 0 (reste) et dire sur quelle marche est le joueur
