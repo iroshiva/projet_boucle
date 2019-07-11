@@ -57,9 +57,10 @@ class Game
 		puts "Vous êtes descendu d'un marche!"
 	end
 
-# def rest
-# 	# - si 2, 3 ou 4 : 0 (reste) et dire sur quelle marche est le joueur
-# end
+	def rest
+	# - si 2, 3 ou 4 : 0 (reste) et dire sur quelle marche est le joueur
+		puts "Vous restez perchés sur votre marche!"
+	end
 
 
 
