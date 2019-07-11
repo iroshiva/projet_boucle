@@ -1,66 +1,81 @@
+ # def sign_up
+# 	puts "Bonjour, afin d'accéder à l'espace secret, définissez votre mot de passe:"
+# 	print "> "
+# 	def_mdp = gets.chomp
+# 	return def_mdp
+# end
+
+# # puts sign_up
 
 
-# Programme qui demande à l'utilisateur : 
-
-
-
-# Method sign-up
-# - définir un mot de passe
-# 	> Demander à l'ut se definir un mot de passer
-# 	> récupérer le mot de passe
-
-# Method log-in
-# - rentrer le mot de passe
-# 	> demander de taper le mot de passe
-# 	> si mdp == def_mdp ok
-# 	> si mdp != def_mdp redemande le mot
-
-# # si mot de passe != def du mot de passe =====> redemande le mot de passe
-# # si mot de passe == def du mot de passe =====> accès à l'espace secret
-
-# Method welcome screen
-# si mot de passe == def du mot de passe =====> accès à l'espace secret
-
-
-
-def sign_up
-	puts "Bonjour, afin d'accéder à l'espace secret, définissez votre mot de passe:"
-	print "> "
-	def_mdp = gets.chomp
-	return def_mdp
-end
-
-# puts sign_up
-
-
-def log_in
-	def_mdp = sign_up
-	puts "Veuillez taper votre mot de passe:"
-	print "> "
-	mdp = gets.chomp
-	# récuprer mdp
+# def log_in
+# 	def_mdp = sign_up
+# 	puts "Veuillez taper votre mot de passe:"
+# 	print "> "
+# 	mdp = gets.chomp
+# 	# récuprer mdp
 	
-	while mdp != def_mdp
-		puts "Votre mot de passe est erroné, veuillez entrer à nouveau votre mot de passe:"
-		print "> "
-		mdp = gets.chomp
-	end
+# 	while mdp != def_mdp
+# 		puts "Votre mot de passe est erroné, veuillez entrer à nouveau votre mot de passe:"
+# 		print "> "
+# 		mdp = gets.chomp
+# 	end
 
-	return mdp
+# 	return mdp
+# end
+
+# # puts log_in
+
+# def welcome_screen
+# 	"Bienvenue sur la page secrète : <fezlkhfmz><eihf><moizefhoz><oi>efh</oi></moizefhoz></eihf></fezlkhfmz>"
+# end
+
+# # puts welcome_screen
+
+# def perform
+# 	log_in
+# 	puts welcome_screen
+# end
+
+# perform
+
+
+require 'io/console' 
+
+
+def signup
+
+        puts "Définis ton mot de passe : "
+   
+        @mdp = STDIN.noecho(&:gets).chomp 
 end
 
-# puts log_in
+def login
 
-def welcome_screen
-	puts "Bienvenue sur la page secrète : <fezlkhfmz><eihf><moizefhoz><oi>efh</oi></moizefhoz></eihf></fezlkhfmz>"
+        puts "Saisis ton mot de passe : "
+    
+        log = STDIN.noecho(&:gets).chomp 
+    
+            while @mdp != log
+            puts "Mot de passe incorrect ! Retente ta chance : "
+        
+            log = STDIN.noecho(&:gets).chomp 
+
+            end
 end
 
-# puts welcome_screen
 
-def perform
-	sign_up
-	log_in
-	welcome_screen
+def welcome_screen 
+
+    puts "Bienvenue dans ton espace secret ! "
+
+end
+
+def perform 
+        signup
+        login
+        welcome_screen
+
 end
 
 perform
