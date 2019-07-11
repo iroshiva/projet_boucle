@@ -27,7 +27,6 @@ class Game
 		else 
 			rest
 
-
 		end
 			
 
@@ -45,10 +44,7 @@ class Game
 	# - si 5 ou 6 : +1 (monter) et dire sur quelle marche est le joueur
 		
 			@pos_mar += 1
-			puts "Vous êtes à la marche #{@pos_mar}"
-		
-		return @pos_mar
-	
+			puts "Vous êtes monté d'une marche!"
 	end
 
 # puts mont
