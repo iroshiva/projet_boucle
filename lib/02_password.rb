@@ -47,19 +47,21 @@ def log_in
 	end
 
 	return mdp
-
-	# return mdp
-
 end
 
-puts log_in
+# puts log_in
 
+def welcome_screen
+	puts "Bienvenue sur la page secrète : <fezlkhfmz><eihf><moizefhoz><oi>efh</oi></moizefhoz></eihf></fezlkhfmz>"
+end
 
+# puts welcome_screen
 
+def perform
+	sign_up
+	log_in
+	welcome_screen
+end
 
-
-
-# def welcome_screen
-	
-# end
+perform
 
