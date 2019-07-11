@@ -78,8 +78,8 @@ class Game
 			puts "---------------"
 			puts "Tour numéro #{@comp_tour}"
 			puts "-------------"  
-			puts "tu ne vas quand même pas descendre à la cave!" 
-			puts "Vous êtes maintenant à la MARCHE #{@pos_mar}"
+			puts "Tu ne vas quand même pas descendre à la cave!" 
+			puts "Tu es maintenant à la MARCHE #{@pos_mar}"
 		else 
 			@pos_mar -= 1
 			puts "---------------"
